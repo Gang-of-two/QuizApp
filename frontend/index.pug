@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="description" content="")
+        meta(name= "keywords" content= "")
+        meta(name="author" content="Ahmed Magdi & Yusuf Azzam")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/all.min.css")
+        title Quizer
+    body 
+        .overlay
+        header
+            .container
+                .logo
+                    a(href="#") 
+                        img(src="logo.png", alt="")
+                nav
+                    ul
+                        .close-btn 
+                            i(class="fa-solid fa-xmark")
+                        li 
+                            a(href="#about") About
+                        li 
+                            a(href="#service") Service
+
+                        li 
+                            a(href="#contact") Contact
+                        li#loginBtn Login
+                .toggle-btn
+                    i(class="fa-solid fa-bars")
+        .slider 
+            .container 
+                .content-box 
+                    h1 We Are Organization
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas porro voluptatem inventore modi ipsa saepe eaque, praesentium, nihil debitis iste fugit sint consectetur ad magnam?
+                .img-box 
+                    img(src="/book.png", alt="")
+        section.about#about
+            .container 
+        section.contact#contact
+            .container
+                .header-content
+                    h2 Contact
+                form(action="" method="POST" autocomplete="off")
+                    .input-container 
+                        input(class="input" type="text" id="username" name="username")
+                        label(for="username") Username
+                    .input-container 
+                        input(class="input" type="text" id="email" name="email")
+                        label(for="email") Email
+                    .input-container 
+                        textarea(class="input" name="message" id="message")
+                        label(for="message") Message
+
+        footer 
+            .container
+
+        script(src="js/index.js")
+        script(src="js/all.min.js")  
